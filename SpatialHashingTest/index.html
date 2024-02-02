@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+	<head>
+		<title>Spatial Hashing</title>
+		<style>
+			body {
+				font-family: verdana; 
+				font-size: 15px;
+			}			
+			.button {
+				background-color: #606060;
+				border: none;
+				color: white;
+				padding: 10px 32px;
+				font-size: 16px;
+				margin: 4px 2px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	
+	<body>
+
+        <h1>Spatial Hashing</h1> 
+		<button id = "buttonRun" class="button">Run</button>
+		<button id = "buttonRestart" class="button">Restart</button>
+		<input id = "checkColl" type = "checkbox"> Show collisions</p>
+		Interacting Particle Count:
+		<input type = "range" min = "0" max = "13824" value = "13824" id = "particleCountSlider" class = "slider">
+		<span id = "ms">0.000</span> ms per frame
+
+		<br><br>		
+        <div id="container"></div>
+        
+        <script src="https://unpkg.com/three@0.139.2/build/three.min.js"></script>
+        <script src="https://unpkg.com/three@0.139.2/examples/js/controls/OrbitControls.js"></script>
+		<script src="./main.js" type="module"></script>
+	</body>
+</html>

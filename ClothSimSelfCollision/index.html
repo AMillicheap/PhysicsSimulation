@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+	<head>
+		<title>Cloth Self Collision Handling</title>
+		<style>
+			body {
+				font-family: verdana; 
+				font-size: 15px;
+			}			
+			.button {
+			background-color: #606060;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+		</style>	
+	</head>
+	
+	<body>
+		
+        <h1>Cloth w/ Self Collisions + Ball Interactions</h1> 
+
+		<script src="./scripts/utils.js" type="module"></script>
+
+		<button id = "runButtonId" class="button">Run</button>
+		<button id = "restartButtonId" class="button">Restart</button>
+		<input id = "collisionButtonId" type = "checkbox" checked> Handle collisions</p>
+	
+		<span id = "numTris">0</span> tris&nbsp;&nbsp;
+		<span id = "numVerts">0</span> verts&nbsp;&nbsp;
+		<span id = "ms">0.000</span> ms per frame
+		<br>
+		Bending compliance:
+		<input type = "range" min = "0" max = "10" value = "1" id = "bendingComplianceSlider" class = "slider"> 
+
+
+		<br><br>		
+        <div id="container"></div>
+        
+        <script src="https://unpkg.com/three@0.139.2/build/three.min.js"></script>
+        <script src="https://unpkg.com/three@0.139.2/examples/js/controls/OrbitControls.js"></script>
+		<script src="./scripts/main.js" type="module"></script>
+	</body>
+</html>

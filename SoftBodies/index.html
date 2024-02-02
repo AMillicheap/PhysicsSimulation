@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+	<head>
+		<title>Soft Body Simulation</title>
+		<style>
+			body {
+				font-family: verdana; 
+				font-size: 15px;
+			}			
+			.button {
+			background-color: #606060;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+		</style>	
+	</head>
+	
+	<body>
+
+        <h1>Soft Body Simulation</h1> 
+		<button id = "buttonRun" class="button">Run</button>
+		<button id = "restartButton" class="button">Restart</button>
+		<button id = "squashButton" class="button">Squash</button>
+		<button id = "newBodyButton" class="button">Bodies++</button>&nbsp;&nbsp;
+		<br><br>
+		<span id = "numTets">0</span> tets&nbsp;&nbsp;
+		Compliance:
+		<input type = "range" min = "0" max = "10" value = "0" id = "complianceSlider" class = "slider"> 
+
+
+		<br><br>		
+        <div id="container"></div>
+        
+        <script src="https://unpkg.com/three@0.139.2/build/three.min.js"></script>
+        <script src="https://unpkg.com/three@0.139.2/examples/js/controls/OrbitControls.js"></script>
+		<script src="./main.js" type="module"></script>
+	</body>
+</html>

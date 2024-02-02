@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pendulum</title>
+<style>
+    body {
+        font-family: verdana; 
+        font-size: 15px;
+    }			
+    .button {
+    background-color: #606060;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+
+<body>
+	<button id="resetButton" class="button">Reset</button>
+	<button id="runButton" class="button">Run</button>
+	<button id="stepButton" class="button">Step</button>
+    <button id="toggleAnalyticSolution" class="button">Turn Analytic Solution Off</button>
+    <p>Number of sub-steps: <input type = "range" min = "0" max = "5" value = "5" id = "stepsSlider" class = "slider"> <span id = "steps">10000</span></p>
+	<canvas id = "myCanvas"></canvas>
+
+<script type="module" src="./main.js"></script> 
+</body>
+</html>
